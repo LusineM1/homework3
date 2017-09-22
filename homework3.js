@@ -32,15 +32,17 @@ const fullName1=fullName("Lusine","Mehrabyan");
 
 
 const str=function(x,y,z){
-	if (x.length>y.length && x.length>z.length);
-	{return x;
-	};
-	if(y.length>x.length && y.length>z.length);{
+	
+	if (x.length>y.length && x.length>z.length) {
+		return x;
+	}
+	
+	if(y.length>x.length && y.length>z.length) {
 		return y;
-	};
-	if(z.length>x.length && z.length>y.length);{
-		return z;
-	};
+	}
+	if(z.length>x.length && z.length>y.length) {
+	return z;
+}
 };
 const str1=str("introduction","to","CS110");
 //console.log(str1);
@@ -72,7 +74,7 @@ const isTruethy=function(inp1,inp2,inp3){
 		return inp1;
 	if(inp2)
 		return inp2;
-	if(inp3)
+    if(inp3);
 		return inp3;
 };
 const isTruethy1=isTruethy(NaN,"hello",10);
